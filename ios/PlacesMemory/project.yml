@@ -1,0 +1,22 @@
+name: PlacesMemory
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  PlacesMemory:
+    type: application
+    platform: iOS
+    sources:
+      - PlacesMemory
+    info:
+      path: PlacesMemory/Info.plist
+      properties:
+        CFBundleDisplayName: PlacesMemory
+        UILaunchScreen: {}
+        NSLocationWhenInUseUsageDescription: "Usamos tu ubicación solo cuando guardas un lugar de interés cercano."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.PlacesMemory
+        INFOPLIST_FILE: PlacesMemory/Info.plist
+        SWIFT_VERSION: 5.9
